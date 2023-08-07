@@ -5,4 +5,4 @@ The function of the application is to calculate the carbon footprint of a partic
 ### Folder Structure
 - frontend
     - nttgreen (flutter application)
-- backend
+- backend (TBD)
