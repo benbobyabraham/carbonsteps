@@ -3,10 +3,10 @@ from .models import UserResponse
 from ..user.mixins import CustomLoginRequiredMixin
 from .serializers import UserResponseSerializer
 
-class UserResponseListCreateAPIView(generics.ListCreateAPIView):
+class UserResponseListCreateAPIView(CustomLoginRequiredMixin, generics.ListCreateAPIView):
     queryset = UserResponse.objects.all()
     serializer_class = UserResponseSerializer
 
-class UserResponseRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
+class UserResponseRetrieveUpdateDestroyAPIView(CustomLoginRequiredMixin, generics.RetrieveUpdateDestroyAPIView):
     queryset = UserResponse.objects.all()
     serializer_class = UserResponseSerializer
