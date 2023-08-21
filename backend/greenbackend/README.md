@@ -41,6 +41,9 @@ Provide step-by-step instructions on how to set up and install your Django backe
 # Navigate to the project directory
 cd carbapp/backend/greenbackend
 
+# Create a virtual environment
+python -m venv env
+
 # Activate virtual environment
 env\Scripts\activate.bat
 
@@ -73,9 +76,9 @@ The base url for accessing the API endpoints is 'https://your-ip-address:8000'
 ### Endpoints
 | Category | API                     | URL                 | Protocol | Remark                                                                                                                                                                                    |
 | -------- | ----------------------- | ------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| User     | User Sign Up            | /users/signup/      | POST     | Parameters:\* user_name<br>\* password<br>\* email<br>\* mobile<br>\* gender<br>\* date_of_birth<br><br>Response:<br>\* id<br>\* user_name<br>\* email<br>\* token<br>\* token_expires_at |
-| User     | User Sign In            | /users/signin/      | POST     | Parameters:<br>\* password<br>\* email<br><br>Response:<br>\* id<br>\* username<br>\* email<br>\* token                                                                                   |
-| User     | Check User Login Status | /users/check-login/ | GET      | Header<br>\* Authorization: token<br><br>Parameters:<br>\* none<br><br>Response:<br>\* id<br>\* username<br>\* email<br>\* token                                                          |
+| User     | User Sign Up            | /user/signup/      | POST     | Parameters:\* user_name<br>\* password<br>\* email<br>\* mobile<br>\* gender<br>\* date_of_birth<br><br>Response:<br>\* id<br>\* user_name<br>\* email<br>\* token<br>\* token_expires_at |
+| User     | User Sign In            | /user/signin/      | POST     | Parameters:<br>\* password<br>\* email<br><br>Response:<br>\* id<br>\* username<br>\* email<br>\* token                                                                                   |
+| User     | Check User Login Status | /user/check-login/ | GET      | Header<br>\* Authorization: token<br><br>Parameters:<br>\* none<br><br>Response:<br>\* id<br>\* username<br>\* email<br>\* token                                                          |
 
 
 ## Contributing
