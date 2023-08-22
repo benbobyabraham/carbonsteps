@@ -10,7 +10,7 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ('username', 'email', 'password', 'token', 'token_expires_at')
+        fields = ('username', 'email', 'password','is_admin' )
 
 
 class UserSignUpSerializer(serializers.ModelSerializer):
@@ -20,7 +20,7 @@ class UserSignUpSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ('username', 'email', 'password','phone' , 'gender', 'dob', 'is_admin', 'token', 'token_expires_at')
+        fields = ('username', 'email', 'password','phone' , 'gender', 'dob', 'token', 'token_expires_at')
 
     # Override the create method
     def create(self, validated_data):
