@@ -12,8 +12,8 @@ class Question(models.Model):
         'Date Published', blank=True, auto_now_add=True
     )
 
-    correct_choice = models.ForeignKey(
-        'Choice', on_delete=models.SET_NULL, null=True, blank=True, related_name='correct_choice_or_question'
+    ordinal = models.IntegerField(
+        "Question Order", null= True, blank= True
     )
 
     def __str__(self):
@@ -23,12 +23,16 @@ class Choice(models.Model):
     class Meta(object):
         db_table = "choice"
     
-    question = models.ForeignKey(
+    question_map = models.ForeignKey(
         Question, on_delete=models.CASCADE, related_name='choice_set'
     )
 
     choice_text = models.CharField(
         "Choice Text", max_length=200
+    )
+
+    next_ques_map = models.ForeignKey(
+        Question, on_delete=models.CASCADE, related_name='next_question',null=True,blank=True
     )
 
     def __str__(self):

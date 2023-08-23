@@ -3,6 +3,7 @@ from .models import Question, Choice
 
 class ChoiceInline(admin.TabularInline):
     model = Choice
+    fk_name = 'question_map'
     extra = 1
 
 class QuestionAdmin(admin.ModelAdmin):
@@ -11,4 +12,4 @@ class QuestionAdmin(admin.ModelAdmin):
 admin.site.register(Question,QuestionAdmin)
 
 # Register this model if need to see all the choices
-# admin.site.register(Choice)
+admin.site.register(Choice)
