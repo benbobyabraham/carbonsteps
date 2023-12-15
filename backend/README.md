@@ -80,6 +80,14 @@ The base url for accessing the API endpoints is 'https://your-ip-address:8000'
 | User     | User Sign In            | /user/signin/      | POST     | Parameters:<br>\* password<br>\* email<br><br>Response:<br>\* id<br>\* username<br>\* email<br>\* token                                                                                   |
 | User     | Check User Login Status | /user/check-login/ | GET      | Header<br>\* Authorization: token<br><br>Parameters:<br>\* none<br><br>Response:<br>\* id<br>\* username<br>\* email<br>\* token                                                          |
 
+#TODO:add documentation for calculate endpoints
+
+(country2 x class4) + ((stay7 + food8 + blr9)x days6) = final metric
+/calculate?country=key&flightclass=key&staytype=key&food=key&localtravelmethod=key&days=key
+(city4 x travel5) + ((stay7 + food8 + blr9)x days6) = final metric
+/calculate?city=key&modeoftravel=key&staytype=key&food=key&localtravelmethod=key&days=key
+Test
+/calculate?city=Mumbai&modeoftravel=Flight&staytype=Hotel&food=Veg&localtravelmethod=Train&days=8
 
 ## Contributing
 Contributing members to the project

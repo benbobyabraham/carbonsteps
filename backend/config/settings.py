@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-0)#18+92g-@$(ttek128q+#95-h7j$l5rod(dd8s-pp(_il8re
 DEBUG = True
 
 DATA_UPLOAD_MAX_NUMBER_FIELDS = 10240
-ALLOWED_HOSTS = ['localhost','127.0.0.1','192.168.1.3','10.138.50.145']
+ALLOWED_HOSTS = ['*']
 CORS_ALLOW_ALL_ORIGINS = True
 # CORS_ALLOWED_ORIGINS = ['http://localhost:3000']
 
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'apps.user',
     'apps.questionbank',
     'apps.userresponses',
+    'apps.calculate',
 ]
 
 MIDDLEWARE = [
@@ -87,6 +88,17 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'carbondb',                      
+#         'USER': 'carbonsteps',
+#         'PASSWORD': 'nttdatards',
+#         'HOST': 'carbonsteps-db.cnnoop3plh95.us-east-1.rds.amazonaws.com',
+#         'PORT': '5432',
+#     }
+# }
 
 
 # Password validation

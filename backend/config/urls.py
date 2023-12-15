@@ -22,4 +22,5 @@ urlpatterns = [
     path('user/', include('apps.user.urls')),
     path('questions/', include('apps.questionbank.urls')),
     path('userresponses/', include('apps.userresponses.urls')),
+    path('calculate/', include('apps.calculate.urls')),
 ]

@@ -1,0 +1,15 @@
+Watching for file changes with StatReloader
+Method Not Allowed: /user/signin/
+[28/Sep/2023 16:15:30] "GET /user/signin/ HTTP/1.1" 405 7574
+Method Not Allowed: /user/signin/
+[28/Sep/2023 16:15:35] "GET /user/signin/ HTTP/1.1" 405 7574
+Watching for file changes with StatReloader
+Method Not Allowed: /user/signin/
+[28/Sep/2023 16:15:36] "GET /user/signin/ HTTP/1.1" 405 7574
+Error: That port is already in use.
+/mnt/c/Users/258070/carbapp/backend/venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1595: RuntimeWarning: DateTimeField User.token_expires_at received a naive datetime (2023-10-05 16:15:50.436571) while time zone support is active.
+  warnings.warn(
+[28/Sep/2023 16:15:50] "POST /user/signin/ HTTP/1.1" 201 7812
+/mnt/c/Users/258070/carbapp/backend/venv/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1595: RuntimeWarning: DateTimeField User.token_expires_at received a naive datetime (2023-10-05 16:17:11.688506) while time zone support is active.
+  warnings.warn(
+[28/Sep/2023 16:17:11] "POST /user/signin/ HTTP/1.1" 201 7812

@@ -1,0 +1,10 @@
+{
+    "beta": {
+        "aws_region": "us-east-1",
+        "django_settings": "config.settings",
+        "profile_name": "default",
+        "project_name": "backend",
+        "runtime": "python3.11",
+        "s3_bucket": "krishitantra-beta"
+    }
+}

@@ -1,0 +1,46 @@
+Formula: user choice(distance) X flight CO2 t = final metric
+
+
+Which class are you flying by?
+Economy- 1km = 0.00018tBusiness- 1km = 0.000271tFirstclass- 1km = 0.00047t  
+
+
+How are you travelling?
+Car-Average car- 1km = 0.0002t
+ 
+Bus-1km = 0.0001t
+ 
+Train-1km = 0.0001t
+ 
+Rickshaw-1km = 0.00015t
+
+
+
+What are your food preferences?
+Vegeterian person per day- 0.0046t
+ 
+Non-vegeterian person per day - .0082t
+
+
+
+Where are you staying?
+
+
+Average household- 0.0016t per day
+
+
+Where are you travelling from?
+
+
+What country are you travelling from?
+
+
+Country: India
+City: Delhi: Distance : 1,200 km
+
+Economy- 1km
+Car-Average car- 1km = 0.0002t
+Vegeterian person per day- 0.0046t
+Stayed at Hotel 
+
+1. x= Distance * Flight
